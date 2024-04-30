@@ -1,0 +1,98 @@
+body {
+  background-color: #27054e !important;
+  max-height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5em;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+}
+
+.submit_btn {
+  width: 15%;
+  background-color: rgb(254, 193, 49);
+  border: none;
+  padding: 0.3em;
+  border-radius: 10px;
+  transition: all 0.2s ease-in;
+  letter-spacing: 2px;
+}
+
+.submit_btn:hover {
+  background-color: rgb(255, 68, 11);
+  color: whitesmoke;
+}
+
+.task_input {
+  width: 30%;
+  background-color: transparent;
+  border: 1px solid sandybrown;
+  border-radius: 10px;
+  padding: 0.5em;
+  outline: none;
+  color: white;
+}
+
+.display_task {
+  color: whitesmoke;
+  min-width: 450px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+ul {
+  padding: 0 !important;
+}
+
+.list_task {
+  background-color: rebeccapurple;
+  list-style-type: none;
+  margin: 1em auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  width: 100%;
+}
+
+.icon_container {
+  display: flex;
+  gap: 1.3em;
+}
+
+.fa-solid {
+  cursor: pointer;
+}
+
+.task_title {
+  color: yellowgreen;
+}
+
+.toDo_list {
+  display: none;
+  color: wheat;
+}
+
+.tasksCompleted {
+  color: wheat;
+}
+
+@media all and (max-width: 989px) {
+  .submit_btn {
+    width: 100%;
+  }
+
+  .task_input {
+    width: 100%;
+  }
+
+  .list_task {
+    width: 350px;
+    margin: 1em auto;
+  }
+}
