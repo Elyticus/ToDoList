@@ -105,5 +105,6 @@ ul {
   .task_wrapper,
   .completed_wrapper {
     width: 100%;
+    overflow: hidden;
   }
 }
