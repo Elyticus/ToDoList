@@ -106,8 +106,4 @@ ul {
   .completed_wrapper {
     width: 100%;
   }
-
-  .display_task,
-  .display_completed_tasks {
-  }
 }
