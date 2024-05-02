@@ -62,6 +62,9 @@ displayTask.addEventListener("click", (event) => {
       listItem.classList.add("completed");
       tasksDone.style.display = "block";
       moveToCompleted(listItem); // Move the completed task
+      if (displayTask.querySelectorAll("li").length === 0) {
+        toDoList.style.display = "none";
+      }
     }
   }
 });
@@ -75,7 +78,10 @@ completedTasks.addEventListener("click", (event) => {
 
     if (target.classList.contains("fa-trash")) {
       listItem.remove();
-      tasksDone.style.display = "none";
+      if (completedTasks.querySelectorAll("li").length === 0) {
+        tasksDone.style.display = "none";
+      }
+
       if (displayTask.querySelectorAll("li").length === 0) {
         toDoList.style.display = "none";
       }
