@@ -99,7 +99,7 @@ ul {
 
   .list_task {
     margin: 0 0 0.3em 0;
-    width: 350px;
+    width: 100%;
   }
 
   .task_wrapper,
