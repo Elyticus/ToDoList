@@ -78,8 +78,14 @@ ul {
   color: wheat;
 }
 
-.tasksCompleted {
+.task_completed {
+  display: none;
   color: wheat;
+}
+
+.completed {
+  /* text-decoration: line-through; */
+  width: 450px;
 }
 
 @media all and (max-width: 989px) {
